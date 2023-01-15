@@ -53,52 +53,58 @@ header{
     width:100% ;
     z-index: 5;
 }
-.nav {
-    display: flex;
-    left: 0;
-    top: 0;
-    width: 100%;
+nav {
+	display: flex;
+	align-items: center;
+	gap: 25px;
     height: 60px;
-    line-height: 60px;
+    width: 100%;
     background-color: rgb(35, 47, 62);
-    padding-left: 30px;
-    list-style: none;
     overflow-y: hidden;
-    min-height: 70px;
 }
 
-.nav .info {
-    text-decoration: none;
-    color: white;
-    padding: 0 10px;
-    font-size: 1.2em;
-    vertical-align: middle;
-    min-width: 160px;
+ul {
+	list-style: none;
+	display: flex;
+	gap: 15px;
 }
-.nav li:nth-child(5) a,
-.nav li:nth-child(6) a  {
+
+.info {
+    color: white;
+    position: relative;
+	display: inline-block;
+    min-width: 160px;
+    font-size: 1.3em;
+    vertical-align: -10px;
+}
+
+nav li:nth-child(2) a {
+    min-width: 50px;
+}
+nav li:nth-child(5) a {
     min-width: 100px;
 }
 
-.nav li:nth-child(6) a, 
-.nav li:nth-child(7) a {
+nav li:nth-child(6) a, 
+nav li:nth-child(7) a {
     min-width: 136px;
 }
 
-.nav li:nth-child(7) a {
+nav li:nth-child(7) a {
     min-width: 168px;
 }
 
-.nav .home {
-    text-decoration: none;
+.home {
     color: white;
-    font-size: 1.5em;
     vertical-align: middle;
+    font-size: 1.3em;
+    vertical-align: -10px;
 }
 
 ion-icon {
-    vertical-align: middle;
-    font-size: 2.3em;
+    font-size: 2em;
+    padding-left: 30px;
+    color: white;
 }
 
 /**
