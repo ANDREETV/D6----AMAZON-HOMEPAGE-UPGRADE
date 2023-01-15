@@ -1,0 +1,406 @@
+/**
+* GLOBALE
+**/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(234, 237, 237);
+    flex-direction: column;
+    height: 100vh;
+    min-width: 200px;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+/**
+* LOGO
+**/
+
+.logo {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(19, 25, 33);
+}
+
+.logo img {
+    padding: 15px 0 10px 15px;
+    width: 100px;
+}
+
+/**
+* BARRA DI NAVIGAZIONE 
+**/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100% ;
+    z-index: 5;
+}
+.nav {
+    display: flex;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: rgb(35, 47, 62);
+    padding-left: 30px;
+    list-style: none;
+    overflow-y: hidden;
+    min-height: 70px;
+}
+
+.nav .info {
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+    font-size: 1.2em;
+    vertical-align: middle;
+    min-width: 160px;
+}
+.nav li:nth-child(5) a,
+.nav li:nth-child(6) a  {
+    min-width: 100px;
+}
+
+.nav li:nth-child(6) a, 
+.nav li:nth-child(7) a {
+    min-width: 136px;
+}
+
+.nav li:nth-child(7) a {
+    min-width: 168px;
+}
+
+.nav .home {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+
+ion-icon {
+    vertical-align: middle;
+    font-size: 2.3em;
+}
+
+/**
+* RIGA GIFT
+**/
+
+.riga {
+    width: 95%;
+    height: 40px;
+    background-color: orange;
+    margin: 150px 0 30px;
+    color: white;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+/**
+* BANNER GIFT
+**/
+
+.banner {
+    width: 95%;
+    height: 128px;
+    max-height: 100%;
+    background-image: url("img/bg-image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.banner > * {
+    color: white;
+}
+
+.banner p {
+    margin-top: 20px;
+}
+
+/**
+* RIGA GIFT
+**/
+
+.riga-articoli {
+    width: 95%;
+    margin-bottom: 60px;
+    background-color: white;
+    height: auto;
+}
+
+.riga-titolo {
+    padding: 20px 0 0 20px;
+    font-weight: 800;
+}
+
+.riga-titolo a {
+    display: inline-block;
+    font-size: 1.3rem;
+    margin-left: 25px;
+    line-height: 40px;
+    color: rgb(87, 160, 173);
+}
+
+.riga-titolo h1{
+    display: inline-block;
+}
+.riga-img{
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.img_shop{
+    width: 424px;
+    height: 518px;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    box-shadow: 0 0 35px black;
+    border-radius: 30px;
+    margin: 20px 5px 0 5px;
+    display: inline-block;
+}
+
+.img_shop:last-of-type {
+    margin-right:0 ;
+}
+.img_shop img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.fa-heart{
+    z-index: 2;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top:20px;
+    left: 340px;
+    transform: translateY(-59px);
+    cursor: pointer;
+    height: 40px;
+}
+
+.img_shop:hover .fa-heart{
+    transform: translateY(0);
+}
+
+.fa-heart:hover{
+    color: red;
+}
+
+.shop{
+    z-index: 2;
+    width: 250px;
+    min-width: 10px;
+    position: absolute;
+    top: 460px;
+    left:18%;
+    padding: 7px;
+    border-radius: 10px;
+    text-align: center;
+    background-color:  rgb(87, 160, 173);
+    transform: translateY(60px);
+}
+
+.shop .fa-cart-plus, a, p{
+    display: inline-block;
+    color: white;
+}
+
+.img_shop:hover .shop{
+    transform: translateY(0);
+}
+.shop a:hover, .shop p:hover, .fa-cart-plus:hover {
+    color: black;
+}
+
+
+
+/**
+* CONTENITORE
+**/
+
+.contenitore{
+    width: 95%;
+    text-align: center;
+}
+
+.blocco, .row{
+    display: inline-block;
+}
+
+.blocco{
+    width: 445px;
+    height: auto;
+    background-color: white;
+    margin-right: 4px;
+    margin-bottom: 30px;
+}
+
+.blocco:nth-child(4) {
+    margin-right: 0;
+}
+
+.blocco .row{
+    width: 100%;
+}
+
+.blocco .row img{
+    width: 45%;
+    padding: 9px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.blocco h2{
+    text-align: left;
+    padding: 15px 0 20px 25px;
+}
+.row-text {
+    text-align: left;
+    position: relative;
+}
+
+.row-text .row-text_1,.row-text_2, .row-text_3 {
+    color: black;
+}
+
+.row-text_1 {
+    position: absolute;
+    left: 29px;
+    bottom: 1px;
+}
+
+.row-text_2 {
+    position: absolute;
+    left: 240px;
+    bottom: 1px;
+}
+
+.row-text_3 {
+    position: absolute;
+    left: 235px;
+    bottom: 1px;
+}
+
+.row-link{
+    text-align: left;
+    margin: 50px 0 0 25px;
+    padding-bottom: 20px;
+}
+.blocco .row-link a{
+    text-align: left;
+    color: rgb(87, 160, 173);
+    font-weight: 800;
+}
+
+.row-text{
+    font-size: 15px;
+}
+
+/**
+* BANNER GAMING E BANNER AUDIO
+**/
+.banner-gaming {
+    width: 100%;
+    text-align: center;
+}
+
+.banner-gaming img {
+    display: inline-block;
+    width: 95%;
+    margin: 30px 0;
+}
+.riga-titolo-2 {
+    min-width: 50px;
+    width:100%;
+    min-width: 200px;
+}
+
+.riga-titolo-2 .text-4{
+    color: black;
+    font-size: 25px;
+}
+
+.riga-titolo-2 a .text-5{
+    font-weight: 900;
+    color: rgb(87, 160, 173);
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+/**
+* FOOTER
+**/
+
+
+.fine {
+    height: 70px;
+    background-color: rgb(35, 47, 62);
+    text-align: center;
+    line-height: 70px;
+    color: white;
+    margin-top: 30px;
+}
+
+.fine a {
+    color: white;
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.logo-fine {
+    height: auto;
+    background-color: rgb(19, 25, 33);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.logo-fine img {
+    width: 300px;
+}
