@@ -75,7 +75,7 @@ ul {
 	display: inline-block;
     min-width: 160px;
     font-size: 1.3em;
-    vertical-align: -10px;
+    vertical-align: -17px;
 }
 
 nav li:nth-child(2) a {
@@ -98,7 +98,7 @@ nav li:nth-child(7) a {
     color: white;
     vertical-align: middle;
     font-size: 1.3em;
-    vertical-align: -10px;
+    vertical-align: -17px;
 }
 
 ion-icon {
