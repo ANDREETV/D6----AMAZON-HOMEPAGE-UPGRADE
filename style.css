@@ -51,7 +51,7 @@ header{
     top: 0;
     left: 0;
     width:100% ;
-    z-index: 5;
+    z-index: 99999;
 }
 nav {
 	display: flex;
@@ -257,6 +257,7 @@ ion-icon {
     text-align: center;
     background-color:  rgb(87, 160, 173);
     transform: translateY(60px);
+    transition: transform 0.2s;
 }
 
 .fa-cart-plus, a, p{
