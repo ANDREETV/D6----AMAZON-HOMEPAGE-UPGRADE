@@ -134,6 +134,7 @@ ion-icon {
     height: 128px;
     max-height: 100%;
     background-image: url("img/bg-image.png");
+    background-position: center;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -152,9 +153,7 @@ ion-icon {
     margin-top: 20px;
 }
 
-/**
-* RIGA GIFT
-**/
+/*******RIGA GIFT*******/
 
 .riga-articoli {
     width: 95%;
@@ -213,9 +212,21 @@ ion-icon {
 }
 
 
-.fa-heart{
+.fa-regular{
     z-index: 2;
     color: white;
+    font-size: 40px;
+    position: absolute;
+    top:20px;
+    left: 340px;
+    transform: translateY(-59px);
+    cursor: pointer;
+    height: 40px;
+}
+
+.fa-solid{
+    z-index: 3;
+    color: transparent;
     font-size: 40px;
     position: absolute;
     top:20px;
@@ -229,11 +240,12 @@ ion-icon {
     transform: translateY(0);
 }
 
-.fa-heart:hover{
+.fa-solid:hover{
     color: red;
 }
 
-.shop{
+
+.fa-cart-plus{
     z-index: 2;
     width: 250px;
     min-width: 10px;
@@ -247,12 +259,14 @@ ion-icon {
     transform: translateY(60px);
 }
 
-.shop .fa-cart-plus, a, p{
+.fa-cart-plus, a, p{
     display: inline-block;
     color: white;
+    font-size: 18px;
+    padding-top: 5px;
 }
 
-.img_shop:hover .shop{
+.img_shop:hover .fa-cart-plus{
     transform: translateY(0);
 }
 .shop a:hover, .shop p:hover, .fa-cart-plus:hover {
